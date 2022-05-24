@@ -21,14 +21,14 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/ubiq/go-ubiq/v7"
+	"github.com/ubiq/go-ubiq/v7/common/hexutil"
+	"github.com/ubiq/go-ubiq/v7/crypto"
 
 	client "github.com/ubiq/rosetta-gubiq-sdk/client"
 	construction "github.com/ubiq/rosetta-gubiq-sdk/services/construction"
 
-	EthTypes "github.com/ethereum/go-ethereum/core/types"
+	EthTypes "github.com/ubiq/go-ubiq/v7/core/types"
 	RosettaTypes "github.com/ubiq/rosetta-sdk-go/types"
 
 	"github.com/ubiq/rosetta-gubiq-sdk/configuration"

@@ -17,7 +17,7 @@ package client
 import (
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/ethclient"
+	"github.com/ubiq/go-ubiq/v7/ethclient"
 )
 
 type EthClient struct {

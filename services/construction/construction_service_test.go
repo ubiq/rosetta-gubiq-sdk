@@ -17,7 +17,7 @@ package construction
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/ubiq/go-ubiq/v7/params"
 	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
 	"github.com/ubiq/rosetta-gubiq-sdk/mocks/services"
 	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"

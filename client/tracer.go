@@ -20,9 +20,9 @@ import (
 	"io/ioutil"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/eth/tracers"
+	"github.com/ubiq/go-ubiq/v7/common"
+	"github.com/ubiq/go-ubiq/v7/common/hexutil"
+	"github.com/ubiq/go-ubiq/v7/eth/tracers"
 )
 
 // convert raw eth data from SDKClient to rosetta

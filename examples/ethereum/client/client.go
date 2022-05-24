@@ -18,14 +18,14 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/ubiq/go-ubiq/v7"
+	"github.com/ubiq/go-ubiq/v7/common"
+	"github.com/ubiq/go-ubiq/v7/rpc"
 
 	"log"
 	"math/big"
 
-	EthTypes "github.com/ethereum/go-ethereum/core/types"
+	EthTypes "github.com/ubiq/go-ubiq/v7/core/types"
 	evmClient "github.com/ubiq/rosetta-gubiq-sdk/client"
 	"github.com/ubiq/rosetta-gubiq-sdk/examples/ethereum/config"
 	sdkTypes "github.com/ubiq/rosetta-gubiq-sdk/types"

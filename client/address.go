@@ -17,7 +17,7 @@ package client
 import (
 	"log"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/ubiq/go-ubiq/v7/common"
 )
 
 // ChecksumAddress ensures an Ethereum hex address

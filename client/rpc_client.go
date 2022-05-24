@@ -20,11 +20,11 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/ubiq/go-ubiq/v7/rpc"
 )
 
 // JSONRPC is the interface for accessing go-ethereum's JSON RPC endpoint.
-// https://github.com/ethereum/go-ethereum/blob/0169d579d0eed4f6366697985a7b0f0b99402783/rpc/client.go#L308
+// https://github.com/ubiq/go-ubiq/blob/0169d579d0eed4f6366697985a7b0f0b99402783/rpc/client.go#L308
 type JSONRPC interface {
 	CallContext(ctx context.Context, result interface{}, method string, args ...interface{}) error
 	BatchCallContext(ctx context.Context, b []rpc.BatchElem) error

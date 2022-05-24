@@ -15,7 +15,7 @@
 package services
 
 import (
-	EthTypes "github.com/ethereum/go-ethereum/core/types"
+	EthTypes "github.com/ubiq/go-ubiq/v7/core/types"
 	evmClient "github.com/ubiq/rosetta-gubiq-sdk/client"
 	RosettaTypes "github.com/ubiq/rosetta-sdk-go/types"
 

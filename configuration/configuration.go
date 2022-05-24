@@ -15,7 +15,7 @@
 package configuration
 
 import (
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/ubiq/go-ubiq/v7/params"
 	RosettaTypes "github.com/ubiq/rosetta-sdk-go/types"
 )
 

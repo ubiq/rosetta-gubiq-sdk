@@ -19,13 +19,13 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/ubiq/go-ubiq/v7/common/hexutil"
 
 	RosettaTypes "github.com/ubiq/rosetta-sdk-go/types"
 
-	EthTypes "github.com/ethereum/go-ethereum/core/types"
+	EthTypes "github.com/ubiq/go-ubiq/v7/core/types"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/ubiq/go-ubiq/v7/common"
 )
 
 const (
@@ -126,7 +126,7 @@ type SignedTransactionWrapper struct {
 }
 
 // EthTypes.Transaction contains TxData, which is DynamicFeeTx:
-// https://github.com/ethereum/go-ethereum/blob/980b7682b474db61ecbd78171e7cacfec8214048
+// https://github.com/ubiq/go-ubiq/blob/980b7682b474db61ecbd78171e7cacfec8214048
 // /core/types/dynamic_fee_tx.go#L25
 type RPCTransaction struct {
 	Tx *EthTypes.Transaction

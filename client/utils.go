@@ -23,8 +23,8 @@ import (
 
 	"golang.org/x/crypto/sha3"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/ubiq/go-ubiq/v7/common"
+	"github.com/ubiq/go-ubiq/v7/common/hexutil"
 	"github.com/ubiq/rosetta-sdk-go/types"
 )
 

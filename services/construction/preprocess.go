@@ -24,10 +24,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/ubiq/go-ubiq/v7/common/hexutil"
 
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/ubiq/go-ubiq/v7/accounts/abi"
+	"github.com/ubiq/go-ubiq/v7/common"
 	"golang.org/x/crypto/sha3"
 
 	"github.com/ubiq/rosetta-gubiq-sdk/client"

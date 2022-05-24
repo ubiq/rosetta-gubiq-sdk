@@ -27,8 +27,8 @@ import (
 	evmClient "github.com/ubiq/rosetta-gubiq-sdk/client"
 	mocks "github.com/ubiq/rosetta-gubiq-sdk/mocks/client"
 
-	"github.com/ethereum/go-ethereum/common"
-	EthTypes "github.com/ethereum/go-ethereum/core/types"
+	"github.com/ubiq/go-ubiq/v7/common"
+	EthTypes "github.com/ubiq/go-ubiq/v7/core/types"
 )
 
 func TestCall_GetTransactionReceipt(t *testing.T) {

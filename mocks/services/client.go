@@ -5,20 +5,20 @@ package services
 import (
 	big "math/big"
 
-	common "github.com/ethereum/go-ethereum/common"
+	common "github.com/ubiq/go-ubiq/v7/common"
 	client "github.com/ubiq/rosetta-gubiq-sdk/client"
 
 	configuration "github.com/ubiq/rosetta-gubiq-sdk/configuration"
 
 	context "context"
 
-	coretypes "github.com/ethereum/go-ethereum/core/types"
+	coretypes "github.com/ubiq/go-ubiq/v7/core/types"
 
 	json "encoding/json"
 
 	mock "github.com/stretchr/testify/mock"
 
-	rpc "github.com/ethereum/go-ethereum/rpc"
+	rpc "github.com/ubiq/go-ubiq/v7/rpc"
 
 	types "github.com/ubiq/rosetta-sdk-go/types"
 )

@@ -25,13 +25,13 @@ import (
 	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
 	mocks "github.com/ubiq/rosetta-gubiq-sdk/mocks/client"
 
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/ubiq/go-ubiq/v7/common/hexutil"
+	"github.com/ubiq/go-ubiq/v7/rpc"
 	RosettaTypes "github.com/ubiq/rosetta-sdk-go/types"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
+	"github.com/ubiq/go-ubiq/v7/common"
 	"golang.org/x/sync/semaphore"
 )
 

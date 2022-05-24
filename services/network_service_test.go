@@ -23,8 +23,8 @@ import (
 	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 	types "github.com/ubiq/rosetta-sdk-go/types"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/stretchr/testify/assert"
+	"github.com/ubiq/go-ubiq/v7/common"
 	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
 )
 

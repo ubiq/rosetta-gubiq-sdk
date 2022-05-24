@@ -23,6 +23,7 @@ import (
 	"math/big"
 	"strconv"
 
+	ubiq "github.com/ubiq/go-ubiq/v7"
 	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
 	sdkTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
@@ -30,15 +31,14 @@ import (
 
 	RosettaTypes "github.com/ubiq/rosetta-sdk-go/types"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	EthTypes "github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth/tracers"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/ubiq/go-ubiq/v7/common"
+	"github.com/ubiq/go-ubiq/v7/common/hexutil"
+	"github.com/ubiq/go-ubiq/v7/consensus/ubqhash"
+	EthTypes "github.com/ubiq/go-ubiq/v7/core/types"
+	"github.com/ubiq/go-ubiq/v7/eth/tracers"
+	"github.com/ubiq/go-ubiq/v7/p2p"
+	"github.com/ubiq/go-ubiq/v7/params"
+	"github.com/ubiq/go-ubiq/v7/rpc"
 	"golang.org/x/sync/semaphore"
 )
 
@@ -156,7 +156,7 @@ func (ec *SDKClient) getEthBlock(
 	}
 
 	if len(raw) == 0 {
-		return nil, ethereum.NotFound
+		return nil, ubiq.NotFound
 	}
 
 	return raw, nil
@@ -345,7 +345,7 @@ func (ec *SDKClient) blockHeader(
 		header, err = ec.HeaderByNumber(ctx, nil)
 	} else {
 		if input.Hash == nil && input.Index == nil {
-			return nil, ethereum.NotFound
+			return nil, ubiq.NotFound
 		}
 
 		if input.Index != nil {
@@ -356,7 +356,7 @@ func (ec *SDKClient) blockHeader(
 	}
 
 	if err != nil {
-		return nil, ethereum.NotFound
+		return nil, ubiq.NotFound
 	}
 
 	return header, nil
@@ -368,7 +368,7 @@ func (ec *SDKClient) BlockAuthor(ctx context.Context, blockIndex int64) (string,
 
 // syncProgress retrieves the current progress of the sync algorithm. If there's
 // no sync currently running, it returns nil.
-func (ec *SDKClient) syncProgress(ctx context.Context) (*ethereum.SyncProgress, error) {
+func (ec *SDKClient) syncProgress(ctx context.Context) (*ubiq.SyncProgress, error) {
 	var raw json.RawMessage
 	if err := ec.CallContext(ctx, &raw, "eth_syncing"); err != nil {
 		return nil, err
@@ -384,7 +384,7 @@ func (ec *SDKClient) syncProgress(ctx context.Context) (*ethereum.SyncProgress, 
 		return nil, err
 	}
 
-	return &ethereum.SyncProgress{
+	return &ubiq.SyncProgress{
 		StartingBlock: uint64(progress.StartingBlock),
 		CurrentBlock:  uint64(progress.CurrentBlock),
 		HighestBlock:  uint64(progress.HighestBlock),
@@ -535,7 +535,7 @@ func (ec *SDKClient) TraceBlockByHash(
 	m := make(map[string][]*FlatCall)
 	for i, tx := range calls {
 		flatCalls := FlattenTraces(tx.Result, []*FlatCall{})
-		// Ethereum native traces are guaranteed to return all transactions
+		// Ubiq native traces are guaranteed to return all transactions
 		txHash := txs[i].TxExtraInfo.TxHash.Hex()
 		if txHash == "" {
 			return nil, fmt.Errorf("could not get %dth tx hash for block %s", i, blockHash.Hex())
@@ -687,7 +687,7 @@ func FlattenTraces(data *Call, flattened []*FlatCall) []*FlatCall {
 // for a given block height.
 //
 // Source:
-// https://github.com/ethereum/go-ethereum/blob/master/consensus/ethash/consensus.go#L646-L653
+// https://github.com/ubiq/go-ubiq/blob/master/consensus/ethash/consensus.go#L646-L653
 func (ec *SDKClient) miningReward(
 	currentBlock *big.Int,
 ) int64 {
@@ -695,13 +695,13 @@ func (ec *SDKClient) miningReward(
 		return big.NewInt(0).Int64()
 	}
 
-	blockReward := ethash.FrontierBlockReward.Int64()
+	blockReward := ubqhash.FrontierBlockReward.Int64()
 	if ec.P.IsByzantium(currentBlock) {
-		blockReward = ethash.ByzantiumBlockReward.Int64()
+		blockReward = ubqhash.ByzantiumBlockReward.Int64()
 	}
 
 	if ec.P.IsConstantinople(currentBlock) {
-		blockReward = ethash.ConstantinopleBlockReward.Int64()
+		blockReward = ubqhash.ConstantinopleBlockReward.Int64()
 	}
 
 	return blockReward
@@ -715,7 +715,7 @@ func (ec *SDKClient) BlockRewardTransaction(
 	var ops []*RosettaTypes.Operation
 	miningReward := ec.miningReward(big.NewInt(blockIdentifier.Index))
 
-	// https://github.com/ethereum/go-ethereum/blob/
+	// https://github.com/ubiq/go-ubiq/blob/
 	// aaca58a7a1d9acbd24bbc74c49933efa2f1af183/consensus/ethash/consensus.go#L645
 	// Calculate miner rewards:
 	// mining_reward * (1 / 32) * num_of_uncles + mining_reward = final_mining_reward
@@ -852,7 +852,7 @@ func (ec *SDKClient) GetErc20TransferGasLimit(
 	// ToAddress for erc20 transfers is the contract address
 	contractAddress := common.HexToAddress(contract.(string))
 	data := GenerateErc20TransferData(toAddress, value)
-	gasLimit, err := ec.EstimateGas(ctx, ethereum.CallMsg{
+	gasLimit, err := ec.EstimateGas(ctx, ubiq.CallMsg{
 		From: common.HexToAddress(fromAddress),
 		To:   &contractAddress,
 		Data: data,
@@ -871,7 +871,7 @@ func (ec *SDKClient) GetContractCallGasLimit(
 ) (uint64, error) {
 	// ToAddress for contract address is the contract address
 	contractAddress := common.HexToAddress(toAddress)
-	gasLimit, err := ec.EstimateGas(ctx, ethereum.CallMsg{
+	gasLimit, err := ec.EstimateGas(ctx, ubiq.CallMsg{
 		From: common.HexToAddress(fromAddress),
 		To:   &contractAddress,
 		Data: data,

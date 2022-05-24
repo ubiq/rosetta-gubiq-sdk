@@ -22,8 +22,8 @@ import (
 	"github.com/ubiq/rosetta-gubiq-sdk/client"
 	sdkTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
-	"github.com/ethereum/go-ethereum/common"
-	EthTypes "github.com/ethereum/go-ethereum/core/types"
+	"github.com/ubiq/go-ubiq/v7/common"
+	EthTypes "github.com/ubiq/go-ubiq/v7/core/types"
 	"github.com/ubiq/rosetta-sdk-go/types"
 )
 

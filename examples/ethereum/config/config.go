@@ -20,7 +20,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/ubiq/go-ubiq/v7/params"
 	"github.com/ubiq/rosetta-sdk-go/types"
 
 	"github.com/ubiq/rosetta-gubiq-sdk/configuration"

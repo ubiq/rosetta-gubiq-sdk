@@ -20,7 +20,7 @@ import (
 	"io/ioutil"
 	"log"
 
-	EthTypes "github.com/ethereum/go-ethereum/core/types"
+	EthTypes "github.com/ubiq/go-ubiq/v7/core/types"
 
 	"math/big"
 	"testing"
@@ -30,7 +30,7 @@ import (
 
 	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/ubiq/go-ubiq/v7/common"
 	RosettaTypes "github.com/ubiq/rosetta-sdk-go/types"
 
 	"github.com/ubiq/rosetta-gubiq-sdk/configuration"

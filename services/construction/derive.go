@@ -19,7 +19,7 @@ import (
 
 	sdkTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/ubiq/go-ubiq/v7/crypto"
 	"github.com/ubiq/rosetta-sdk-go/types"
 )
 

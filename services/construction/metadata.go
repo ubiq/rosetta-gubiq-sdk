@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/ubiq/go-ubiq/v7/common/hexutil"
 
 	"github.com/ubiq/rosetta-gubiq-sdk/client"
 	sdkTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
