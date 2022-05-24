@@ -21,10 +21,10 @@ import (
 
 	"github.com/ethereum/go-ethereum/common/hexutil"
 
-	"github.com/coinbase/rosetta-geth-sdk/client"
-	"github.com/coinbase/rosetta-geth-sdk/configuration"
-	mockedServices "github.com/coinbase/rosetta-geth-sdk/mocks/services"
-	AssetTypes "github.com/coinbase/rosetta-geth-sdk/types"
+	"github.com/ubiq/rosetta-gubiq-sdk/client"
+	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
+	mockedServices "github.com/ubiq/rosetta-gubiq-sdk/mocks/services"
+	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
 	"github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/stretchr/testify/assert"

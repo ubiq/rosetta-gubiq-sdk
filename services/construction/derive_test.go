@@ -19,7 +19,7 @@ import (
 	"encoding/hex"
 	"testing"
 
-	AssetTypes "github.com/coinbase/rosetta-geth-sdk/types"
+	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
 	"github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/stretchr/testify/assert"

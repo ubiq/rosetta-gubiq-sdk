@@ -23,8 +23,8 @@ import (
 	"github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/ethereum/go-ethereum/params"
 
-	"github.com/coinbase/rosetta-geth-sdk/configuration"
 	RosettaTypes "github.com/coinbase/rosetta-sdk-go/types"
+	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
 )
 
 // Mode is the setting that determines if

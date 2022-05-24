@@ -17,13 +17,13 @@ package services
 import (
 	"net/http"
 
-	"github.com/coinbase/rosetta-geth-sdk/configuration"
-	AssetTypes "github.com/coinbase/rosetta-geth-sdk/types"
 	"github.com/coinbase/rosetta-sdk-go/types"
+	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
+	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
-	construction "github.com/coinbase/rosetta-geth-sdk/services/construction"
 	"github.com/coinbase/rosetta-sdk-go/asserter"
 	"github.com/coinbase/rosetta-sdk-go/server"
+	construction "github.com/ubiq/rosetta-gubiq-sdk/services/construction"
 )
 
 // NewBlockchainRouter creates a Mux http.Handler from a collection

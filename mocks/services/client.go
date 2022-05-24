@@ -5,10 +5,10 @@ package services
 import (
 	big "math/big"
 
-	client "github.com/coinbase/rosetta-geth-sdk/client"
 	common "github.com/ethereum/go-ethereum/common"
+	client "github.com/ubiq/rosetta-gubiq-sdk/client"
 
-	configuration "github.com/coinbase/rosetta-geth-sdk/configuration"
+	configuration "github.com/ubiq/rosetta-gubiq-sdk/configuration"
 
 	context "context"
 

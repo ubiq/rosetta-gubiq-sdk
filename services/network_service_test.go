@@ -18,14 +18,14 @@ import (
 	"context"
 	"testing"
 
-	mockedServices "github.com/coinbase/rosetta-geth-sdk/mocks/services"
+	mockedServices "github.com/ubiq/rosetta-gubiq-sdk/mocks/services"
 
-	AssetTypes "github.com/coinbase/rosetta-geth-sdk/types"
 	types "github.com/coinbase/rosetta-sdk-go/types"
+	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
-	"github.com/coinbase/rosetta-geth-sdk/configuration"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/stretchr/testify/assert"
+	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
 )
 
 var (

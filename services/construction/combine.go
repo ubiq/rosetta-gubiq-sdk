@@ -19,8 +19,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/coinbase/rosetta-geth-sdk/client"
-	sdkTypes "github.com/coinbase/rosetta-geth-sdk/types"
+	"github.com/ubiq/rosetta-gubiq-sdk/client"
+	sdkTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
 	"github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/ethereum/go-ethereum/common"

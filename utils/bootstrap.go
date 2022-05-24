@@ -20,11 +20,11 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/coinbase/rosetta-geth-sdk/configuration"
-	"github.com/coinbase/rosetta-geth-sdk/services"
-	"github.com/coinbase/rosetta-geth-sdk/services/construction"
+	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
+	"github.com/ubiq/rosetta-gubiq-sdk/services"
+	"github.com/ubiq/rosetta-gubiq-sdk/services/construction"
 
-	AssetTypes "github.com/coinbase/rosetta-geth-sdk/types"
+	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
 	"github.com/coinbase/rosetta-sdk-go/asserter"
 	"github.com/coinbase/rosetta-sdk-go/server"

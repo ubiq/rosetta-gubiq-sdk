@@ -25,10 +25,10 @@ import (
 	"log"
 	"math/big"
 
-	evmClient "github.com/coinbase/rosetta-geth-sdk/client"
-	"github.com/coinbase/rosetta-geth-sdk/examples/ethereum/config"
-	sdkTypes "github.com/coinbase/rosetta-geth-sdk/types"
 	EthTypes "github.com/ethereum/go-ethereum/core/types"
+	evmClient "github.com/ubiq/rosetta-gubiq-sdk/client"
+	"github.com/ubiq/rosetta-gubiq-sdk/examples/ethereum/config"
+	sdkTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 )
 
 type EthereumClient struct {

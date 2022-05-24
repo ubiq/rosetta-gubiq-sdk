@@ -24,8 +24,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 
-	evmClient "github.com/coinbase/rosetta-geth-sdk/client"
-	mocks "github.com/coinbase/rosetta-geth-sdk/mocks/client"
+	evmClient "github.com/ubiq/rosetta-gubiq-sdk/client"
+	mocks "github.com/ubiq/rosetta-gubiq-sdk/mocks/client"
 
 	"github.com/ethereum/go-ethereum/common"
 	EthTypes "github.com/ethereum/go-ethereum/core/types"

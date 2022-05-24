@@ -17,10 +17,10 @@ package main
 import (
 	"log"
 
-	"github.com/coinbase/rosetta-geth-sdk/examples/ethereum/client"
-	"github.com/coinbase/rosetta-geth-sdk/examples/ethereum/config"
-	sdkTypes "github.com/coinbase/rosetta-geth-sdk/types"
-	"github.com/coinbase/rosetta-geth-sdk/utils"
+	"github.com/ubiq/rosetta-gubiq-sdk/examples/ethereum/client"
+	"github.com/ubiq/rosetta-gubiq-sdk/examples/ethereum/config"
+	sdkTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
+	"github.com/ubiq/rosetta-gubiq-sdk/utils"
 )
 
 func main() {

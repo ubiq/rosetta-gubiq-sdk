@@ -21,13 +21,13 @@ import (
 	"log"
 	"strconv"
 
-	sdkTypes "github.com/coinbase/rosetta-geth-sdk/types"
+	sdkTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
 	"github.com/coinbase/rosetta-sdk-go/parser"
 	EthTypes "github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/coinbase/rosetta-geth-sdk/client"
-	"github.com/coinbase/rosetta-geth-sdk/configuration"
+	"github.com/ubiq/rosetta-gubiq-sdk/client"
+	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
 
 	"github.com/coinbase/rosetta-sdk-go/types"
 )

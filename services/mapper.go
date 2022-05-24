@@ -15,15 +15,15 @@
 package services
 
 import (
-	evmClient "github.com/coinbase/rosetta-geth-sdk/client"
 	RosettaTypes "github.com/coinbase/rosetta-sdk-go/types"
 	EthTypes "github.com/ethereum/go-ethereum/core/types"
+	evmClient "github.com/ubiq/rosetta-gubiq-sdk/client"
 
 	"log"
 	"math/big"
 	"strings"
 
-	sdkTypes "github.com/coinbase/rosetta-geth-sdk/types"
+	sdkTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 )
 
 const (

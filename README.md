@@ -38,10 +38,10 @@ package main
 import (
 	"log"
 
-	"github.com/coinbase/rosetta-geth-sdk/examples/ethereum/client"
-	"github.com/coinbase/rosetta-geth-sdk/examples/ethereum/config"
-	sdkTypes "github.com/coinbase/rosetta-geth-sdk/types"
-	"github.com/coinbase/rosetta-geth-sdk/utils"
+	"github.com/ubiq/rosetta-gubiq-sdk/examples/ethereum/client"
+	"github.com/ubiq/rosetta-gubiq-sdk/examples/ethereum/config"
+	sdkTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
+	"github.com/ubiq/rosetta-gubiq-sdk/utils"
 )
 
 func main() {
@@ -93,9 +93,9 @@ The SDK defines a list of [Client interfaces](services/construction/types.go), w
 
 The SDK provides a default implementation of the client module for a quick start. However, these interfaces require custom integration to override:
 <!-- These links will need to be updated when we publish to GitHub -->
-1. [`GetBlockReceipts`](https://github.com/coinbase/rosetta-geth-sdk/blob/1a8ac6c199732ab06a40725ccc07f34b52a2b46e/services/construction/types.go#L124)
-2. [`GetTransactionReceipt`](https://github.com/coinbase/rosetta-geth-sdk/blob/1a8ac6c199732ab06a40725ccc07f34b52a2b46e/services/construction/types.go#L133)
-3. [`GetNativeTransferGasLimit`](https://github.com/coinbase/rosetta-geth-sdk/blob/1a8ac6c199732ab06a40725ccc07f34b52a2b46e/services/construction/types.go#L140)
+1. [`GetBlockReceipts`](https://github.com/ubiq/rosetta-gubiq-sdk/blob/1a8ac6c199732ab06a40725ccc07f34b52a2b46e/services/construction/types.go#L124)
+2. [`GetTransactionReceipt`](https://github.com/ubiq/rosetta-gubiq-sdk/blob/1a8ac6c199732ab06a40725ccc07f34b52a2b46e/services/construction/types.go#L133)
+3. [`GetNativeTransferGasLimit`](https://github.com/ubiq/rosetta-gubiq-sdk/blob/1a8ac6c199732ab06a40725ccc07f34b52a2b46e/services/construction/types.go#L140)
 
 
 ## Development

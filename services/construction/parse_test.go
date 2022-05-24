@@ -18,9 +18,9 @@ import (
 	"context"
 	"testing"
 
-	AssetTypes "github.com/coinbase/rosetta-geth-sdk/types"
 	"github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/stretchr/testify/assert"
+	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 )
 
 var (

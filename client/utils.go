@@ -19,7 +19,7 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/coinbase/rosetta-geth-sdk/configuration"
+	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
 
 	"golang.org/x/crypto/sha3"
 

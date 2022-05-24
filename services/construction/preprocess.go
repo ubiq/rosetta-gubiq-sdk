@@ -30,8 +30,8 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"golang.org/x/crypto/sha3"
 
-	"github.com/coinbase/rosetta-geth-sdk/client"
-	sdkTypes "github.com/coinbase/rosetta-geth-sdk/types"
+	"github.com/ubiq/rosetta-gubiq-sdk/client"
+	sdkTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
 	"github.com/coinbase/rosetta-sdk-go/parser"
 	"github.com/coinbase/rosetta-sdk-go/types"

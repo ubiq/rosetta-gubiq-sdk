@@ -25,14 +25,14 @@ import (
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	client "github.com/coinbase/rosetta-geth-sdk/client"
-	construction "github.com/coinbase/rosetta-geth-sdk/services/construction"
+	client "github.com/ubiq/rosetta-gubiq-sdk/client"
+	construction "github.com/ubiq/rosetta-gubiq-sdk/services/construction"
 
 	RosettaTypes "github.com/coinbase/rosetta-sdk-go/types"
 	EthTypes "github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/coinbase/rosetta-geth-sdk/configuration"
-	AssetTypes "github.com/coinbase/rosetta-geth-sdk/types"
+	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
+	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
 	"github.com/coinbase/rosetta-sdk-go/utils"
 )

@@ -25,15 +25,15 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/coinbase/rosetta-geth-sdk/client"
-	mockedServices "github.com/coinbase/rosetta-geth-sdk/mocks/services"
+	"github.com/ubiq/rosetta-gubiq-sdk/client"
+	mockedServices "github.com/ubiq/rosetta-gubiq-sdk/mocks/services"
 
-	AssetTypes "github.com/coinbase/rosetta-geth-sdk/types"
+	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
 	RosettaTypes "github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/coinbase/rosetta-geth-sdk/configuration"
+	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"

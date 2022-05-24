@@ -17,7 +17,7 @@ package construction
 import (
 	"context"
 
-	sdkTypes "github.com/coinbase/rosetta-geth-sdk/types"
+	sdkTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
 	"github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/ethereum/go-ethereum/crypto"

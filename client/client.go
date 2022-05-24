@@ -23,8 +23,8 @@ import (
 	"math/big"
 	"strconv"
 
-	"github.com/coinbase/rosetta-geth-sdk/configuration"
-	sdkTypes "github.com/coinbase/rosetta-geth-sdk/types"
+	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
+	sdkTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
 	"github.com/coinbase/rosetta-sdk-go/utils"
 

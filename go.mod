@@ -1,4 +1,4 @@
-module github.com/coinbase/rosetta-geth-sdk
+module github.com/ubiq/rosetta-gubiq-sdk
 
 go 1.16
 

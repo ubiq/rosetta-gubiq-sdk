@@ -17,11 +17,11 @@ package services
 import (
 	"context"
 
-	"github.com/coinbase/rosetta-geth-sdk/configuration"
-	AssetTypes "github.com/coinbase/rosetta-geth-sdk/types"
+	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
+	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
-	construction "github.com/coinbase/rosetta-geth-sdk/services/construction"
 	"github.com/coinbase/rosetta-sdk-go/types"
+	construction "github.com/ubiq/rosetta-gubiq-sdk/services/construction"
 )
 
 // AccountAPIService implements the server.AccountAPIServicer interface.
