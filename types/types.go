@@ -15,7 +15,7 @@
 package types
 
 import (
-	RosettaTypes "github.com/coinbase/rosetta-sdk-go/types"
+	RosettaTypes "github.com/ubiq/rosetta-sdk-go/types"
 )
 
 const (

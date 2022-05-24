@@ -20,8 +20,8 @@ import (
 	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
 	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
-	"github.com/coinbase/rosetta-sdk-go/types"
 	construction "github.com/ubiq/rosetta-gubiq-sdk/services/construction"
+	"github.com/ubiq/rosetta-sdk-go/types"
 )
 
 // AccountAPIService implements the server.AccountAPIServicer interface.

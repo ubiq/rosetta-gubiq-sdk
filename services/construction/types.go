@@ -19,12 +19,12 @@ import (
 	"encoding/json"
 	"math/big"
 
-	RosettaTypes "github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/ethereum/go-ethereum/common"
 	EthTypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/rpc"
 	evmClient "github.com/ubiq/rosetta-gubiq-sdk/client"
 	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
+	RosettaTypes "github.com/ubiq/rosetta-sdk-go/types"
 )
 
 // Client contains all the methods required to interact with go-ethereum based blockchain

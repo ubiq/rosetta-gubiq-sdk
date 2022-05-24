@@ -26,10 +26,10 @@ import (
 
 	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
-	"github.com/coinbase/rosetta-sdk-go/asserter"
-	"github.com/coinbase/rosetta-sdk-go/server"
-	RosettaTypes "github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/neilotoole/errgroup"
+	"github.com/ubiq/rosetta-sdk-go/asserter"
+	"github.com/ubiq/rosetta-sdk-go/server"
+	RosettaTypes "github.com/ubiq/rosetta-sdk-go/types"
 )
 
 // BootStrap quickly starts the Rosetta server

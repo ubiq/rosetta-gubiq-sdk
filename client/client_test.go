@@ -25,9 +25,9 @@ import (
 	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
 	mocks "github.com/ubiq/rosetta-gubiq-sdk/mocks/client"
 
-	RosettaTypes "github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/rpc"
+	RosettaTypes "github.com/ubiq/rosetta-sdk-go/types"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/stretchr/testify/assert"

@@ -21,7 +21,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/common/hexutil"
 
-	RosettaTypes "github.com/coinbase/rosetta-sdk-go/types"
+	RosettaTypes "github.com/ubiq/rosetta-sdk-go/types"
 
 	EthTypes "github.com/ethereum/go-ethereum/core/types"
 

@@ -15,9 +15,9 @@
 package services
 
 import (
-	RosettaTypes "github.com/coinbase/rosetta-sdk-go/types"
 	EthTypes "github.com/ethereum/go-ethereum/core/types"
 	evmClient "github.com/ubiq/rosetta-gubiq-sdk/client"
+	RosettaTypes "github.com/ubiq/rosetta-sdk-go/types"
 
 	"log"
 	"math/big"

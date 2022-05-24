@@ -21,8 +21,8 @@ import (
 
 	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
-	"github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/stretchr/testify/assert"
+	"github.com/ubiq/rosetta-sdk-go/types"
 )
 
 func TestConstructionDerive(t *testing.T) {

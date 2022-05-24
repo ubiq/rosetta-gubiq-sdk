@@ -17,12 +17,12 @@ package services
 import (
 	"context"
 
-	"github.com/coinbase/rosetta-sdk-go/asserter"
 	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
 	"github.com/ubiq/rosetta-gubiq-sdk/services/construction"
 	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
+	"github.com/ubiq/rosetta-sdk-go/asserter"
 
-	"github.com/coinbase/rosetta-sdk-go/types"
+	"github.com/ubiq/rosetta-sdk-go/types"
 )
 
 // NetworkAPIService implements the server.NetworkAPIServicer interface.

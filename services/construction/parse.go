@@ -24,10 +24,10 @@ import (
 	"github.com/ubiq/rosetta-gubiq-sdk/client"
 	sdkTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
-	"github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	EthTypes "github.com/ethereum/go-ethereum/core/types"
+	"github.com/ubiq/rosetta-sdk-go/types"
 	"golang.org/x/crypto/sha3"
 )
 

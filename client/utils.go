@@ -23,9 +23,9 @@ import (
 
 	"golang.org/x/crypto/sha3"
 
-	"github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/ubiq/rosetta-sdk-go/types"
 )
 
 const (

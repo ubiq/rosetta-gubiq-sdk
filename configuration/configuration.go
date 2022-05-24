@@ -15,8 +15,8 @@
 package configuration
 
 import (
-	RosettaTypes "github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/ethereum/go-ethereum/params"
+	RosettaTypes "github.com/ubiq/rosetta-sdk-go/types"
 )
 
 // Configuration determines how the we setup the blockchain and Rosetta server

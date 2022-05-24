@@ -28,13 +28,13 @@ import (
 	client "github.com/ubiq/rosetta-gubiq-sdk/client"
 	construction "github.com/ubiq/rosetta-gubiq-sdk/services/construction"
 
-	RosettaTypes "github.com/coinbase/rosetta-sdk-go/types"
 	EthTypes "github.com/ethereum/go-ethereum/core/types"
+	RosettaTypes "github.com/ubiq/rosetta-sdk-go/types"
 
 	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
 	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
-	"github.com/coinbase/rosetta-sdk-go/utils"
+	"github.com/ubiq/rosetta-sdk-go/utils"
 )
 
 const (

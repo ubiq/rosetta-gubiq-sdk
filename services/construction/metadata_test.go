@@ -26,9 +26,9 @@ import (
 	mockedServices "github.com/ubiq/rosetta-gubiq-sdk/mocks/services"
 	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
-	"github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
+	"github.com/ubiq/rosetta-sdk-go/types"
 )
 
 var (

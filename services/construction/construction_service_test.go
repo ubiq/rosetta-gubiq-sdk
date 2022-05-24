@@ -17,11 +17,11 @@ package construction
 import (
 	"math/big"
 
-	"github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/ethereum/go-ethereum/params"
 	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
 	"github.com/ubiq/rosetta-gubiq-sdk/mocks/services"
 	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
+	"github.com/ubiq/rosetta-sdk-go/types"
 )
 
 var (

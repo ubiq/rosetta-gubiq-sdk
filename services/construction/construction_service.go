@@ -23,13 +23,13 @@ import (
 
 	sdkTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
-	"github.com/coinbase/rosetta-sdk-go/parser"
 	EthTypes "github.com/ethereum/go-ethereum/core/types"
+	"github.com/ubiq/rosetta-sdk-go/parser"
 
 	"github.com/ubiq/rosetta-gubiq-sdk/client"
 	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
 
-	"github.com/coinbase/rosetta-sdk-go/types"
+	"github.com/ubiq/rosetta-sdk-go/types"
 )
 
 const (

@@ -173,7 +173,7 @@ Our documentation is divided into the following sections:
 
 ## Related Projects
 
-* [rosetta-sdk-go](https://github.com/coinbase/rosetta-sdk-go) — The `rosetta-sdk-go` SDK provides a collection of packages used for interaction with the Rosetta API specification. 
+* [rosetta-sdk-go](https://github.com/ubiq/rosetta-sdk-go) — The `rosetta-sdk-go` SDK provides a collection of packages used for interaction with the Rosetta API specification. 
 * [rosetta-specifications](https://github.com/coinbase/rosetta-specifications) — Much of the SDK code is generated from this repository.
 * [rosetta-cli](https://github.com/coinbase/rosetta-cli) — Use the `rosetta-cli` tool to test your Rosetta API implementation. The tool also provides the ability to look up block contents and account balances.
 

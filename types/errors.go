@@ -17,7 +17,7 @@ package types
 import (
 	"errors"
 
-	"github.com/coinbase/rosetta-sdk-go/types"
+	"github.com/ubiq/rosetta-sdk-go/types"
 )
 
 var (

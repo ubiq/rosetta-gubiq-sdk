@@ -26,9 +26,9 @@ import (
 	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
 	sdkTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
-	"github.com/coinbase/rosetta-sdk-go/utils"
+	"github.com/ubiq/rosetta-sdk-go/utils"
 
-	RosettaTypes "github.com/coinbase/rosetta-sdk-go/types"
+	RosettaTypes "github.com/ubiq/rosetta-sdk-go/types"
 
 	"github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/common"

@@ -30,8 +30,8 @@ import (
 
 	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
-	RosettaTypes "github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/ethereum/go-ethereum/common"
+	RosettaTypes "github.com/ubiq/rosetta-sdk-go/types"
 
 	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
 

@@ -20,8 +20,8 @@ import (
 
 	mockedServices "github.com/ubiq/rosetta-gubiq-sdk/mocks/services"
 
-	types "github.com/coinbase/rosetta-sdk-go/types"
 	AssetTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
+	types "github.com/ubiq/rosetta-sdk-go/types"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/stretchr/testify/assert"

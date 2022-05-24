@@ -20,11 +20,11 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/ethereum/go-ethereum/params"
+	"github.com/ubiq/rosetta-sdk-go/types"
 
-	RosettaTypes "github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/ubiq/rosetta-gubiq-sdk/configuration"
+	RosettaTypes "github.com/ubiq/rosetta-sdk-go/types"
 )
 
 // Mode is the setting that determines if

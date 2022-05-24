@@ -3,7 +3,7 @@ module github.com/ubiq/rosetta-gubiq-sdk
 go 1.16
 
 require (
-	github.com/coinbase/rosetta-sdk-go v0.7.6
+	github.com/ubiq/rosetta-sdk-go v0.7.6
 	github.com/ethereum/go-ethereum v1.10.16
 	github.com/neilotoole/errgroup v0.1.6
 	github.com/stretchr/testify v1.7.0

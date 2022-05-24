@@ -19,8 +19,8 @@ import (
 
 	sdkTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
-	"github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/ubiq/rosetta-sdk-go/types"
 )
 
 // ConstructionDerive implements the /construction/derive endpoint.

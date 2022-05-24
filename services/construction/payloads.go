@@ -26,10 +26,10 @@ import (
 	"github.com/ubiq/rosetta-gubiq-sdk/client"
 	sdkTypes "github.com/ubiq/rosetta-gubiq-sdk/types"
 
-	"github.com/coinbase/rosetta-sdk-go/parser"
-	"github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/ethereum/go-ethereum/common"
 	EthTypes "github.com/ethereum/go-ethereum/core/types"
+	"github.com/ubiq/rosetta-sdk-go/parser"
+	"github.com/ubiq/rosetta-sdk-go/types"
 )
 
 // ConstructionPayloads implements /construction/payloads endpoint
